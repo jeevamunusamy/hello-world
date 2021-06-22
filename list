@@ -1,0 +1,6 @@
+list2=['name','age','class']
+list3=['jeeva',56,'first']
+list4=list(zip(list2,list3))
+print(list4)
+d2=dict(zip(list2,list3))
+print(d2)
