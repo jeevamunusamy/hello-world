@@ -1,0 +1,10 @@
+dict = {'jeeva' : "2000", 'kavin' : "2007", 'raju' : "2003", 'Nandha' : "1310",'navin' : "2204"}
+username = input("Enter username : ")
+if username in dict :
+    password = input("Enter password : ")
+    if (dict[username] == password) :
+        print ("They are now logged into the system")
+    else :
+        print ("Invalid password")
+else :
+    print ("You are not valid user")
