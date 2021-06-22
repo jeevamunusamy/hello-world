@@ -1,0 +1,10 @@
+a=10
+list1=[10,20,30,40,50]
+if a in list1:
+    print("found")
+else:
+    print("notfound")
+if type(a)is int:
+    print("a is an integer")
+else:
+    print("a is not integer")
