@@ -1,0 +1,7 @@
+def encrypt():
+    strings=input('what is your message: ')
+    even=strings[::2]
+    odd=strings[1::2]
+    print(even)
+    print(odd)
+encrypt()
