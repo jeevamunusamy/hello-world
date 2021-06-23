@@ -1,0 +1,54 @@
+num=int(input("Enter a number\n"))
+if num<0:
+    print('negative')
+else:
+    print("positive")
+    
+    
+num=int(input("Enter a number\n"))
+flag=0
+for n in range(2,num):
+    if num%n==0:
+        flag=1
+        break
+if flag:
+    print("is not prime")
+else:
+    print("is prime")    
+
+
+
+count=0
+while count<10:
+    count+=1
+    print(count)
+else:
+    print("all iteration completed")
+    
+    
+num=int(input("Enter a number\n"))
+print(num)
+print("program continues here..")
+try:
+    num=int(input("Enter a number\n"))
+    print(num)
+except:
+    pass
+    print("some error in convertion")
+print("program continues here..")    
+    
+    
+def sayhello():
+    print("helloworld")
+    print("this is included in the function")
+print("this is not part of the function")
+sayhello()
+
+def square(x):
+    return x*x
+print(square(8))
+print(square)
+
+d=lambda x:x*x
+print(d)
+print(d(13))
