@@ -30,3 +30,18 @@ print(s1.replace('l','m'))
 today='2021-06-23'
 days=today.split('-')
 print(days)
+
+pi=3.14159
+print("pi=%.2f"%pi)
+
+name='navin'
+score=43
+print("The score of %s is %d"%(name,score))
+
+d1={'name':'navin','score':43}
+print("The score of %(name)s is %(score)d"%d1)
+
+print("we have{}student in {}".format(60,"computerscience"))
+name='navin'
+score=43
+print("The score {name} is {score}".format(name=name,score=score))
