@@ -1,0 +1,34 @@
+def f(x):
+    def g(y):
+        return y*y
+    return x+g(x)
+g=f(10)
+print(g)
+
+def f(x):
+    def g():
+        return x*x
+    return g
+g=f(10)
+print(g)
+print(g())
+
+
+
+fh=open('//home/jeevamunusamy/Day 1','r')
+print(fh.name)
+print(fh.mode)
+print(fh.closed)
+fh.close()
+
+fh=open('//home/jeevamunusamy/Day 1','r')
+print(fh.readlines())
+print(fh.readlines())
+fh.close()
+
+fh=open('//home/jeevamunusamy/Day 1','r')
+content=fh.readlines()
+print(content)
+fh.close()
+
+
