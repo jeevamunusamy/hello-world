@@ -1,0 +1,49 @@
+list1=[23,32,54,456,902,'hello',416,589,'world',630,12,67,76]
+list2=[]
+for element in list1:
+    list2.append(str(element))
+print("before sorting:",list2)
+list2.sort()
+print("end sorting;",list2)
+
+
+tuple1=(10,20,30)
+print(tuple1)
+tuple2=(100)
+print(type(tuple2))
+print(tuple1.index(30))
+
+d1={'name':'navin','age':7,'class':'second'}
+print(d1['age'])
+d1['name']='kavin'
+print(d1)
+d1['age']=589
+print(d1)
+d2={'school':'cheran','rank':"first"}
+d1.update(d2)
+print(d1)
+
+d1={'name':'navin','age':7,'class':'second'}
+print(d1['name'])
+print(d1.get('name'))
+print(d1.get('name','Not found'))
+d1.setdefault('name','jeeva')
+print(d1)
+
+list2=['name','age','class']
+list3=['raju',33,'first']
+list4=list(zip(list2,list3))
+print(list4)
+d2=dict(zip(list2,list3))
+print(d2)
+
+
+for num in range(5):
+    print(num)
+
+numbers=[x for x in range(10)]
+print(numbers)
+
+square_of_numbers=[x*x for x in range(10)]
+print(square_of_numbers)
+
