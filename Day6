@@ -1,0 +1,42 @@
+numbers=[x for x in range(50)]
+print(numbers)
+
+
+numbers=[x for x in range(50)]
+def check_even(x):
+    if x%2==0:
+        return True
+    else:
+        return False
+even_numbers=list(filter(check_even,numbers))
+print(even_numbers)
+
+        
+numbers=[x for x in range(50)]
+def check_even(x):
+    if x%2==0:
+        return True
+    else:
+        return False
+even_numbers=list(filter(lambda x:x%2==0,numbers))
+print(even_numbers)        
+
+
+
+list1=[20,10,30,40,50]
+for num in list1:
+    print(num)
+    
+ia=iter(list1)
+print(next(ia))
+
+
+def findnum(n):
+    num=0
+    while num<n:
+        num+=1
+        yield num
+total=sum(findnum(200000))
+print(total)        
+
+
