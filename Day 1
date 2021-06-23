@@ -1,0 +1,20 @@
+print("helloworld")
+a=25
+print(a)
+
+a=1
+print("reference of a with value 1:",id(a))
+
+a=2
+print("reference of a with value 2:",id(a))
+print(a)
+a+=25
+print("reference of a with value 7:",id(a))
+print(a)
+
+list1=[13,48,'hello',51,'abcdef',21]
+print("reference os list1:",id(list1))
+print(list1)
+
+var1=28
+print(type(var1))
