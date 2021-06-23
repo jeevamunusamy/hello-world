@@ -1,0 +1,32 @@
+a=10
+list1=[10,20,30,40,50]
+if a in list1:
+    print("found")
+else:
+    print("notfound")
+if type(a)is int:
+    print("a is an integer")
+else:
+    print("a is not an integer")
+    
+
+s1="hello world"
+for char in s1:
+    print(char)
+print(s1[5])
+print(s1[-1])
+print(s1[1:5])
+print(s1[1:8:2])
+print(s1[::-1])
+
+
+s1="hello world"
+print(s1.upper())
+print(s1.find('w'))
+print(s1.index('o'))
+print(s1.count('l'))
+print(s1.replace('l','m'))
+
+today='2021-06-23'
+days=today.split('-')
+print(days)
