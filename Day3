@@ -1,0 +1,43 @@
+days=['2021','06','15']
+daystring='-'.join(days)
+print(daystring)
+
+
+list1=['a','b','c','d','e','f']
+print("The reference of list1:",id(list1))
+print("The elements of list1:",list1)
+list2=list1
+print("The reference of list2:",id(list2))
+print("The elements of list2:",list2)
+list2[1]='m'
+print("The reference of list2:",id(list2))
+print("The elements of list2:",list2)
+
+
+list1=[10,20,30,40,50]
+print("elements of list1:",list1)
+print("elements of list1:",len(list1))
+list1.append(60)
+print("elements of list1:",list1)
+print("elements of list1:",len(list1))
+list1.extend((60,70,80))
+print("elements of list1:",list1)
+print("elements of list1:",len(list1))
+list1.insert(3,80)
+print("elements of list1:",list1)
+print("elements of list1:",len(list1))
+
+
+list1=[82,51,71,21]
+list1.sort()
+print(list1)
+
+
+
+def encrypt():
+    strings=input('what is your message: ')
+    even=strings[::2]
+    odd=strings[1::2]
+    print(even+even)
+encrypt()
+
