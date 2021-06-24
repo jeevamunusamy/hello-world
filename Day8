@@ -1,0 +1,38 @@
+import sys
+print(sys.argv)
+
+import sys
+print(sys.argv)
+print(sys.argv[1])
+
+import subprocess
+p1=subprocess.Popen(['ls'],stdout=subprocess.PIPE,shell=True)
+res,err=p1.communicate()
+print(res.decode('utf-8'))
+
+
+import datetime
+x=datetime.datetime.now()
+print(x)
+
+import datetime
+x=datetime.datetime.now()
+print(x)
+print("the current year is:",x.year)
+print("the current month is:",x.month)
+print("the current day is:",x.day)
+y=datetime.datetime(2021,6,24)
+print("the new date is:",y)
+print(x.strftime("%y %m %d"))
+curdate=datetime.datetime.now()
+hours=2 
+timediff=datetime.timedelta(hours=hours)
+future_time=curdate+timediff
+print("the current timestamp:",curdate)
+print("after 2 hours",future_time)
+
+
+import os 
+os.system('ls')
+
+
