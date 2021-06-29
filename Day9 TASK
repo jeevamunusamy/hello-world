@@ -1,0 +1,14 @@
+class Point:
+    def __init__(self,xval,yval):
+        self.x=xval
+        self.y=yval
+    def __repr__(self):
+        return "x-val:{},y-val:{}".format(self.x,self.y)
+if __name__=="__main__":
+    obj1=[3,5]
+    obj2=[6,7]
+    obj2.append(4)
+    value=obj1+obj2
+    print(value)
+    value.sort()
+    print(value)
