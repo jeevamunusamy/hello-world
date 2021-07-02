@@ -1,0 +1,21 @@
+import re
+fh=open('/home/jeevamunusamy/Documents/pp.py','r')
+count=0
+for line in fh.readlines():
+    sobj=re.search(r'^\s*s',line)
+    if sobj:
+        print(line)
+        count+=c
+fh.close()      
+
+
+
+import re
+s1=input("Enter a string\n")
+sobj=re.search(r'to*total',s1)
+if sobj:
+   print("matched")
+else:
+     print("matched")
+    
+        
