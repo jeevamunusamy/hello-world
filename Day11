@@ -1,0 +1,15 @@
+import threading 
+import time 
+def sleeper(n):
+    print("thread {} is going to sleep to sleep for{} seconas".format(n,n))
+    time.sleep(n)
+    print("thread {} is completed".format(n))
+    t1=threading.thread(target=sleeper,args=(5,1))
+    t1.start()
+    
+    
+import json    
+d1={"name":"zare","age":7,"class":"second"}
+fh=open("day1(d1.json".'w'))
+json.dump(d1.fh)
+fh.close()
