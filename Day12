@@ -1,0 +1,22 @@
+import csv
+def csvreader(fileobj):
+    records=csv.reader(fileobj)
+for row in records:
+    print(''.join(row))
+if __name__=="__main__":
+    with(open('uk-500.csv','r'))as csvfile:
+        csvreader(csvfile)
+
+
+
+import csv
+def csvwriter(data,path):
+    with(open(path))as csvfile:
+        writer=csv.writer(csv,delimiter=",")
+        for line in data:
+            writer.writerow(line)
+
+if __name__=="__main__":
+    path=".csv"
+    data=['first_name,last_name,city'.split(",")]
+    csvwriter(datapath)
