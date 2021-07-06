@@ -1,0 +1,35 @@
+
+SECRET_KEY="thisisarandomstring"
+SQLALCHEMY_DATABASE_URI="postgres+psycopg2://exampledbuser:password@localhost:5432/exampledb3"
+
+import os
+import flask import flask,render_template,request,Response
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
+db=SQLAlchemy()
+def create_app():
+     from.module import book
+      app=Flask(_name_,instance_path=os.getcwd(),instance_relative_config=True)
+      app.config.from_pyfile('config.py')
+      db.init_app(app)
+      #migrate=migrate(app.db)
+      return app
+
+
+from app import create_app
+app=create_app()
+if_name_=="_main_":
+   app.run()
+
+
+from app import db
+class Customer(db.Model):
+   _tablename_='customers'
+   id=db.column(db.Integer,primary_key=True)
+   email=db.column(db.String(150),unique=True)
+   organization=db.Column(db.string(150))
+
+def_init_(self,email,organization):
+    self.email=email
+    self.organization=organiztion
