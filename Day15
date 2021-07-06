@@ -1,0 +1,25 @@
+import pandas as pd
+s1=pd.Series([23,45,67,89,90,'city','country'])
+print(s1)
+
+
+import pandas as  pd
+df1=pd.read_csv('/home/jeevamunusamy/Downloads/Iris_data.csv')
+print(df1.head())
+print(df1.columns)
+
+
+import pandas as  pd
+df1=pd.read_csv('/home/jeevamunusamy/Downloads/Iris_data.csv')
+print(df1.loc[0])
+print(df1.loc[1:5])
+
+import pandas as  pd
+df1=pd.read_csv('/home/jeevamunusamy/Downloads/Iris_data.csv')
+print(df1.loc[:])
+
+
+import pandas as pd
+sales=[('jona llc',123,456,789),('alpha co',200,300,400)]
+df1=pd.DataFrame(sales)
+print(df1)
