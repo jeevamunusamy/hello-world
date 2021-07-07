@@ -1,0 +1,34 @@
+import pandas as pd
+
+countries=['india','china','jappan']
+extensions=['mail','email','gmail']
+population=[123,456,789]
+life_expectancies=['karur','trichy','erode']
+data={
+    'extensions':pd.Series(extensions,index=countries),
+    'population':pd.Series(population,index=countries),
+    'life_expectancies':pd.Series(life_expectancies,index=countries)
+}
+df1=pd.DataFrame(data)
+print(df1)
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import dateutil as du
+df1=pd.read_csv('/home/jeevamunusamy/Downloads/Iris_data.csv')
+df1['datetime']=df1['date'].apply(lambda x:du.parser.parse(str(x)))
+print(df1.head())
+
+
+import numpy as np
+nparr1=np.array([5,7,8,9])
+print(nparr1)
+
+a=[[5,6,7,8],
+  [1,2,3,4]]
+nparr=np.array(a)
+print(nparr.shape)
+
+arr2=np.arange(0,100,5),np.linspace(1,10,20)
+print(arr2)
