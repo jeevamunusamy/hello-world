@@ -1,0 +1,83 @@
+from app import db
+class Customer(db.Model):
+   _tablename+='customer'
+   id=db.Column(Integer,primary_key=True)
+   email=db.Column(string(50))
+   organization=db.Column(stirng(50))
+   def_init_(self,email,organization):
+           self.email=email
+           self.organization=organization
+           
+    def save(self):
+          db.session.add(self)
+          db.session.commit()
+          
+    @saticmethod
+    def getall():
+         return customer.query.all()
+
+
+import os
+from flask_api import FlaskAPI
+from flask import request,jsonify,abort
+from flask_sqlalchemy import SQLAlchemy
+
+db=SQLAlchemy()
+def create_app():
+from.models import customer
+    app=FlaskAPI(_name_,instance_path+os.getcwd(),instance_relative()
+    app.config.from_pyfile('config.py')
+    db.init_app(app)
+    
+    @app.route("/customer",methods=['post'])
+    def register():
+        email=request.data.get('email')
+        organization=request.data.get("organization)
+        customer=Customer(email=eamil,organization=organization)
+        customer.save()
+        response={'email':email,'organization':organization}
+        response.status_code=201
+        return jsonify(response)
+
+
+def is_prime(num)
+    for n in range(2,num):
+        if num%n==0:
+            return FALSE
+    return True
+    
+    
+    import unitest
+from prime import is_prime
+class Mytestcase(unitest,Testcase):
+    def test_prime(self):
+       self.assertTrue(is_prime(6))
+       
+    def test_prime_again(self):
+     
+if_name_=='_main_':
+   unitest.main()
+
+
+import pandas as pd 
+from sklearn.linear_model import linearRegression
+from sklearn.model_selection import train_test_split
+df=pd.read_csv('Weather.csv')
+print(df.columns)
+print(df.head())
+
+
+x=df['Mintemp'].value.reshape(-1,1)
+y=df['Maxtemp'].value.reshape(-1,1)
+x_train, x_test, y_train, y_test_split(x,y,test_size=0.2, random_state=42)
+linreg=linearregression()
+linreg.fit(x_train,y_train)
+y_read=linreg.predict(x_test)
+df1=pd.Dataframe({'Actual': y_test.flatten(),'predicted':y_pred.flatten()})
+         
+
+
+
+
+
+
